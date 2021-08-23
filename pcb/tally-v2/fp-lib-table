@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name tally-v2)(type KiCad)(uri E:/Dudelectric-project/tally-v2.pretty)(options "")(descr ""))
+  (lib (name w_indicators)(type KiCad)(uri ${KIPRJMOD}/mod_indicators/w_indicators.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,7 @@
+Simple demonstrations of putting AVR microcontrollers to sleep in power-down mode,
+which results in minimum current.  Coded with Arduino IDE version 1.0.4 (and with
+the Arduino-Tiny core for the ATtiny MCUs, http://code.google.com/p/arduino-tiny/)
+
+For ATmega328P, ~0.1µA.
+For ATtinyX5 revisions that implement software BOD disable, ~0.1µA,
+for ATtinyX5 revisions that don't, ~20µA.

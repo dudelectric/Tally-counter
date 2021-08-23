@@ -1,0 +1,395 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5EB8CA6F
+P 5750 5900
+F 0 "#PWR0101" H 5750 5650 50  0001 C CNN
+F 1 "GND" H 5755 5727 50  0000 C CNN
+F 2 "" H 5750 5900 50  0001 C CNN
+F 3 "" H 5750 5900 50  0001 C CNN
+	1    5750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB8C4EF
+P 4050 4050
+F 0 "#PWR0102" H 4050 3800 50  0001 C CNN
+F 1 "GND" H 4055 3877 50  0000 C CNN
+F 2 "" H 4050 4050 50  0001 C CNN
+F 3 "" H 4050 4050 50  0001 C CNN
+	1    4050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EB88A9C
+P 4050 3950
+F 0 "BT1" H 4168 4046 50  0000 L CNN
+F 1 "Battery_Cell" H 4168 3955 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 4050 4010 50  0001 C CNN
+F 3 "~" V 4050 4010 50  0001 C CNN
+	1    4050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5EB885C3
+P 6950 5600
+F 0 "SW2" H 6950 5885 50  0000 C CNN
+F 1 "RESET" H 6950 5794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H7.3mm" H 6950 5800 50  0001 C CNN
+F 3 "~" H 6950 5800 50  0001 C CNN
+	1    6950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5EB87C7A
+P 6950 5100
+F 0 "SW1" H 6950 5385 50  0000 C CNN
+F 1 "COUNT" H 6950 5294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H7.3mm" H 6950 5300 50  0001 C CNN
+F 3 "~" H 6950 5300 50  0001 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4600 6350 4600
+Wire Wire Line
+	8700 2700 8700 4600
+Wire Wire Line
+	8650 4500 8650 2600
+Wire Wire Line
+	6350 4500 8650 4500
+Wire Wire Line
+	8600 4400 6350 4400
+Wire Wire Line
+	8600 2500 8600 4400
+Wire Wire Line
+	8550 4300 8550 2400
+Wire Wire Line
+	6350 4300 8550 4300
+Wire Wire Line
+	8500 4200 6350 4200
+Wire Wire Line
+	8500 2300 8500 4200
+Wire Wire Line
+	8450 4100 8450 2200
+Wire Wire Line
+	6350 4100 8450 4100
+Wire Wire Line
+	8400 4000 8400 2100
+Wire Wire Line
+	6350 4000 8400 4000
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20PU U2
+U 1 1 5EB6CC5B
+P 5750 4800
+F 0 "U2" H 5750 6081 50  0000 C CNN
+F 1 "ATtiny2313-20PU" H 5750 5990 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5750 4800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13750 3800
+Wire Wire Line
+	6750 5100 6350 5100
+Wire Wire Line
+	6350 5200 6750 5200
+Wire Wire Line
+	6750 5200 6750 5600
+$Comp
+L power:GND #PWR0103
+U 1 1 5EBAD584
+P 7150 5600
+F 0 "#PWR0103" H 7150 5350 50  0001 C CNN
+F 1 "GND" H 7155 5427 50  0000 C CNN
+F 2 "" H 7150 5600 50  0001 C CNN
+F 3 "" H 7150 5600 50  0001 C CNN
+	1    7150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EBAD9AB
+P 7150 5100
+F 0 "#PWR0104" H 7150 4850 50  0001 C CNN
+F 1 "GND" H 7155 4927 50  0000 C CNN
+F 2 "" H 7150 5100 50  0001 C CNN
+F 3 "" H 7150 5100 50  0001 C CNN
+	1    7150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4200 4950 4200
+Wire Wire Line
+	4950 4200 4950 3300
+Wire Wire Line
+	5150 4400 4900 4400
+Wire Wire Line
+	4900 4400 4900 3200
+Wire Wire Line
+	6350 5500 6550 5500
+Wire Wire Line
+	6550 5500 6550 6200
+Wire Wire Line
+	4750 3200 3450 3200
+Wire Wire Line
+	3450 3200 3450 6200
+Wire Wire Line
+	3450 6200 6550 6200
+NoConn ~ 5150 4000
+NoConn ~ 6350 4900
+NoConn ~ 6350 5000
+NoConn ~ 6350 4700
+Wire Wire Line
+	5350 3700 5750 3700
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5EEADC40
+P 3650 3650
+F 0 "J1" H 3568 3325 50  0000 C CNN
+F 1 "Conn_01x02" H 3568 3416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 3650 50  0001 C CNN
+F 3 "~" H 3650 3650 50  0001 C CNN
+	1    3650 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 3650 4050 3650
+Wire Wire Line
+	4050 3650 4050 3750
+Wire Wire Line
+	3850 3550 5350 3550
+Wire Wire Line
+	5350 3550 5350 3700
+$Comp
+L Display_Character:5611AH U5
+U 1 1 60ABD4B7
+P 7650 2400
+F 0 "U5" H 7650 3067 50  0000 C CNN
+F 1 "5611AH" H 7650 2976 50  0000 C CNN
+F 2 "w_indicators:7segdisp_sa05" H 7650 1800 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-123(Ver.10A).pdf" H 7150 2875 50  0001 L CNN
+	1    7650 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2700 8700 2700
+Wire Wire Line
+	7950 2600 8350 2600
+Wire Wire Line
+	7950 2100 8100 2100
+Wire Wire Line
+	7950 2200 8150 2200
+Wire Wire Line
+	7950 2300 8200 2300
+Wire Wire Line
+	7950 2400 8250 2400
+Wire Wire Line
+	7950 2500 8300 2500
+$Comp
+L Display_Character:5611AH U4
+U 1 1 60ACC489
+P 6450 2400
+F 0 "U4" H 6450 3067 50  0000 C CNN
+F 1 "5611AH" H 6450 2976 50  0000 C CNN
+F 2 "w_indicators:7segdisp_sa05" H 6450 1800 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-123(Ver.10A).pdf" H 5950 2875 50  0001 L CNN
+	1    6450 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Display_Character:5611AH U3
+U 1 1 60ACE10C
+P 5200 2400
+F 0 "U3" H 5200 3067 50  0000 C CNN
+F 1 "5611AH" H 5200 2976 50  0000 C CNN
+F 2 "w_indicators:7segdisp_sa05" H 5200 1800 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-123(Ver.10A).pdf" H 4700 2875 50  0001 L CNN
+	1    5200 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2100 6950 2100
+Wire Wire Line
+	6950 2100 6950 1500
+Wire Wire Line
+	6950 1500 8100 1500
+Wire Wire Line
+	8100 1500 8100 2100
+Connection ~ 8100 2100
+Wire Wire Line
+	8100 2100 8400 2100
+Wire Wire Line
+	6750 2200 7000 2200
+Wire Wire Line
+	7000 2200 7000 1450
+Wire Wire Line
+	7000 1450 8150 1450
+Wire Wire Line
+	8150 1450 8150 2200
+Connection ~ 8150 2200
+Wire Wire Line
+	8150 2200 8450 2200
+Wire Wire Line
+	6750 2300 7050 2300
+Wire Wire Line
+	7050 2300 7050 1400
+Wire Wire Line
+	7050 1400 8200 1400
+Wire Wire Line
+	8200 1400 8200 2300
+Connection ~ 8200 2300
+Wire Wire Line
+	8200 2300 8500 2300
+Wire Wire Line
+	6750 2400 7100 2400
+Wire Wire Line
+	7100 2400 7100 1350
+Wire Wire Line
+	7100 1350 8250 1350
+Wire Wire Line
+	8250 1350 8250 2400
+Connection ~ 8250 2400
+Wire Wire Line
+	8250 2400 8550 2400
+Wire Wire Line
+	6750 2500 7150 2500
+Wire Wire Line
+	7150 2500 7150 1300
+Wire Wire Line
+	7150 1300 8300 1300
+Wire Wire Line
+	8300 1300 8300 2500
+Connection ~ 8300 2500
+Wire Wire Line
+	8300 2500 8600 2500
+Wire Wire Line
+	6750 2600 7200 2600
+Wire Wire Line
+	7200 2600 7200 1250
+Wire Wire Line
+	7200 1250 8350 1250
+Wire Wire Line
+	8350 1250 8350 2600
+Connection ~ 8350 2600
+Wire Wire Line
+	8350 2600 8650 2600
+Wire Wire Line
+	6750 2700 7250 2700
+Wire Wire Line
+	7250 2700 7250 1200
+Wire Wire Line
+	7250 1200 8400 1200
+Wire Wire Line
+	8400 1200 8400 2050
+Wire Wire Line
+	8400 2050 8700 2050
+Wire Wire Line
+	8700 2050 8700 2700
+Connection ~ 8700 2700
+Wire Wire Line
+	5500 2100 5500 1500
+Wire Wire Line
+	5500 1500 6950 1500
+Connection ~ 6950 1500
+Wire Wire Line
+	5500 2200 5550 2200
+Wire Wire Line
+	5550 2200 5550 1450
+Wire Wire Line
+	5550 1450 7000 1450
+Connection ~ 7000 1450
+Wire Wire Line
+	5500 2300 5600 2300
+Wire Wire Line
+	5600 2300 5600 1400
+Wire Wire Line
+	5600 1400 7050 1400
+Connection ~ 7050 1400
+Wire Wire Line
+	5500 2400 5650 2400
+Wire Wire Line
+	5650 2400 5650 1350
+Wire Wire Line
+	5650 1350 7100 1350
+Connection ~ 7100 1350
+Wire Wire Line
+	7150 1300 5700 1300
+Wire Wire Line
+	5700 1300 5700 2500
+Wire Wire Line
+	5700 2500 5500 2500
+Connection ~ 7150 1300
+Wire Wire Line
+	5500 2600 5750 2600
+Wire Wire Line
+	5750 2600 5750 1250
+Wire Wire Line
+	5750 1250 7200 1250
+Connection ~ 7200 1250
+Wire Wire Line
+	7250 1200 5800 1200
+Wire Wire Line
+	5800 1200 5800 2700
+Wire Wire Line
+	5800 2700 5500 2700
+Connection ~ 7250 1200
+NoConn ~ 7950 2800
+NoConn ~ 6750 2800
+NoConn ~ 5500 2800
+Wire Wire Line
+	4900 2700 4900 2750
+Wire Wire Line
+	4750 2750 4900 2750
+Wire Wire Line
+	4750 2750 4750 3200
+Connection ~ 4900 2750
+Wire Wire Line
+	4900 2750 4900 2800
+Wire Wire Line
+	4900 3200 6000 3200
+Wire Wire Line
+	6000 3200 6000 2750
+Wire Wire Line
+	6000 2750 6150 2750
+Wire Wire Line
+	6150 2750 6150 2700
+Wire Wire Line
+	6150 2750 6150 2800
+Connection ~ 6150 2750
+Wire Wire Line
+	7350 2700 7350 2750
+Wire Wire Line
+	4950 3300 7200 3300
+Wire Wire Line
+	7200 3300 7200 2750
+Wire Wire Line
+	7200 2750 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	7350 2750 7350 2800
+Text Notes 5000 4200 0    50   ~ 0
+D3
+Text Notes 5000 4400 0    50   ~ 0
+D2
+Text Notes 6400 5500 0    50   ~ 0
+D1
+$EndSCHEMATC

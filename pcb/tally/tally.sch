@@ -1,0 +1,417 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5EB8CA6F
+P 5750 5900
+F 0 "#PWR0101" H 5750 5650 50  0001 C CNN
+F 1 "GND" H 5755 5727 50  0000 C CNN
+F 2 "" H 5750 5900 50  0001 C CNN
+F 3 "" H 5750 5900 50  0001 C CNN
+	1    5750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB8C4EF
+P 4050 4050
+F 0 "#PWR0102" H 4050 3800 50  0001 C CNN
+F 1 "GND" H 4055 3877 50  0000 C CNN
+F 2 "" H 4050 4050 50  0001 C CNN
+F 3 "" H 4050 4050 50  0001 C CNN
+	1    4050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EB88A9C
+P 4050 3950
+F 0 "BT1" H 4168 4046 50  0000 L CNN
+F 1 "Battery_Cell" H 4168 3955 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 4050 4010 50  0001 C CNN
+F 3 "~" V 4050 4010 50  0001 C CNN
+	1    4050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5EB885C3
+P 6950 5600
+F 0 "SW2" H 6950 5885 50  0000 C CNN
+F 1 "RESET" H 6950 5794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H7.3mm" H 6950 5800 50  0001 C CNN
+F 3 "~" H 6950 5800 50  0001 C CNN
+	1    6950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5EB87C7A
+P 6950 5100
+F 0 "SW1" H 6950 5385 50  0000 C CNN
+F 1 "COUNT" H 6950 5294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H7.3mm" H 6950 5300 50  0001 C CNN
+F 3 "~" H 6950 5300 50  0001 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8350 2700
+Wire Wire Line
+	8700 4600 6350 4600
+Wire Wire Line
+	8700 2700 8700 4600
+Wire Wire Line
+	8350 2700 8700 2700
+Connection ~ 8300 2600
+Wire Wire Line
+	8650 2600 8300 2600
+Wire Wire Line
+	8650 4500 8650 2600
+Wire Wire Line
+	6350 4500 8650 4500
+Connection ~ 8250 2500
+Wire Wire Line
+	8600 4400 6350 4400
+Wire Wire Line
+	8600 2500 8600 4400
+Wire Wire Line
+	8250 2500 8600 2500
+Connection ~ 8200 2400
+Wire Wire Line
+	8550 2400 8200 2400
+Wire Wire Line
+	8550 4300 8550 2400
+Wire Wire Line
+	6350 4300 8550 4300
+Connection ~ 8150 2300
+Wire Wire Line
+	8500 4200 6350 4200
+Wire Wire Line
+	8500 2300 8500 4200
+Wire Wire Line
+	8150 2300 8500 2300
+Connection ~ 8100 2200
+Wire Wire Line
+	8450 2200 8100 2200
+Wire Wire Line
+	8450 4100 8450 2200
+Wire Wire Line
+	6350 4100 8450 4100
+Connection ~ 8050 2100
+Wire Wire Line
+	8400 2100 8050 2100
+Wire Wire Line
+	8400 4000 8400 2100
+Wire Wire Line
+	6350 4000 8400 4000
+Connection ~ 6650 2100
+Connection ~ 4700 2100
+Wire Wire Line
+	4700 2100 6650 2100
+Connection ~ 4750 2200
+Connection ~ 6600 2200
+Wire Wire Line
+	6600 2200 4750 2200
+Connection ~ 6550 2300
+Connection ~ 4800 2300
+Wire Wire Line
+	4800 2300 6550 2300
+Connection ~ 6500 2400
+Connection ~ 4850 2400
+Wire Wire Line
+	4850 2400 6500 2400
+Connection ~ 6450 2500
+Connection ~ 4900 2500
+Wire Wire Line
+	4900 2500 6450 2500
+Connection ~ 6400 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	4950 2600 6400 2600
+Connection ~ 6350 2700
+Connection ~ 5000 2700
+Wire Wire Line
+	5000 2700 6350 2700
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20PU U2
+U 1 1 5EB6CC5B
+P 5750 4800
+F 0 "U2" H 5750 6081 50  0000 C CNN
+F 1 "ATtiny2313-20PU" H 5750 5990 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5750 4800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7950 2800
+NoConn ~ 6750 2800
+Wire Wire Line
+	8350 2700 7950 2700
+Wire Wire Line
+	8350 1600 8350 2700
+Wire Wire Line
+	6350 1600 8350 1600
+Wire Wire Line
+	6350 2700 6350 1600
+Wire Wire Line
+	6750 2700 6350 2700
+Wire Wire Line
+	8300 2600 7950 2600
+Wire Wire Line
+	8300 1650 8300 2600
+Wire Wire Line
+	6400 1650 8300 1650
+Wire Wire Line
+	6400 2600 6400 1650
+Wire Wire Line
+	6750 2600 6400 2600
+Wire Wire Line
+	6650 2100 6750 2100
+Wire Wire Line
+	6650 1900 6650 2100
+Wire Wire Line
+	8050 1900 6650 1900
+Wire Wire Line
+	8050 2100 8050 1900
+Wire Wire Line
+	7950 2100 8050 2100
+Wire Wire Line
+	6600 1850 8100 1850
+Wire Wire Line
+	8100 2200 7950 2200
+Wire Wire Line
+	8100 1850 8100 2200
+Wire Wire Line
+	6600 2200 6600 1850
+Wire Wire Line
+	6750 2200 6600 2200
+Wire Wire Line
+	6550 2300 6750 2300
+Wire Wire Line
+	6550 1800 6550 2300
+Wire Wire Line
+	8150 1800 6550 1800
+Wire Wire Line
+	8150 2300 8150 1800
+Wire Wire Line
+	7950 2300 8150 2300
+Wire Wire Line
+	8200 2400 7950 2400
+Wire Wire Line
+	8200 1750 8200 2400
+Wire Wire Line
+	6500 1750 8200 1750
+Wire Wire Line
+	6500 2400 6500 1750
+Wire Wire Line
+	6750 2400 6500 2400
+Wire Wire Line
+	8250 2500 7950 2500
+Wire Wire Line
+	8250 1700 8250 2500
+Wire Wire Line
+	6450 1700 8250 1700
+Wire Wire Line
+	6450 2500 6450 1700
+Wire Wire Line
+	6750 2500 6450 2500
+$Comp
+L Display_Character:DA56-11GWA U3
+U 1 1 5EB64C83
+P 7350 2500
+F 0 "U3" H 7350 3167 50  0000 C CNN
+F 1 "DA56-11GWA" H 7350 3076 50  0000 C CNN
+F 2 "Display_7Segment:DA56-11CGKWA" H 7370 1850 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/DA56-11GWA.pdf" H 7230 2600 50  0001 C CNN
+	1    7350 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4600 2800
+NoConn ~ 3400 2800
+Wire Wire Line
+	5000 2700 4600 2700
+Wire Wire Line
+	5000 1600 5000 2700
+Wire Wire Line
+	3000 1600 5000 1600
+Wire Wire Line
+	3000 2700 3000 1600
+Wire Wire Line
+	3400 2700 3000 2700
+Wire Wire Line
+	4950 2600 4600 2600
+Wire Wire Line
+	4950 1650 4950 2600
+Wire Wire Line
+	3050 1650 4950 1650
+Wire Wire Line
+	3050 2600 3050 1650
+Wire Wire Line
+	3400 2600 3050 2600
+Wire Wire Line
+	3300 2100 3400 2100
+Wire Wire Line
+	3300 1900 3300 2100
+Wire Wire Line
+	4700 1900 3300 1900
+Wire Wire Line
+	4700 2100 4700 1900
+Wire Wire Line
+	4600 2100 4700 2100
+Wire Wire Line
+	3250 1850 4750 1850
+Wire Wire Line
+	4750 2200 4600 2200
+Wire Wire Line
+	4750 1850 4750 2200
+Wire Wire Line
+	3250 2200 3250 1850
+Wire Wire Line
+	3400 2200 3250 2200
+Wire Wire Line
+	3200 2300 3400 2300
+Wire Wire Line
+	3200 1800 3200 2300
+Wire Wire Line
+	4800 1800 3200 1800
+Wire Wire Line
+	4800 2300 4800 1800
+Wire Wire Line
+	4600 2300 4800 2300
+Wire Wire Line
+	4850 2400 4600 2400
+Wire Wire Line
+	4850 1750 4850 2400
+Wire Wire Line
+	3150 1750 4850 1750
+Wire Wire Line
+	3150 2400 3150 1750
+Wire Wire Line
+	3400 2400 3150 2400
+Wire Wire Line
+	4900 2500 4600 2500
+Wire Wire Line
+	4900 1700 4900 2500
+Wire Wire Line
+	3100 1700 4900 1700
+Wire Wire Line
+	3100 2500 3100 1700
+Wire Wire Line
+	3400 2500 3100 2500
+NoConn ~ 13750 3800
+Wire Wire Line
+	6750 5100 6350 5100
+Wire Wire Line
+	6350 5200 6750 5200
+Wire Wire Line
+	6750 5200 6750 5600
+$Comp
+L power:GND #PWR0103
+U 1 1 5EBAD584
+P 7150 5600
+F 0 "#PWR0103" H 7150 5350 50  0001 C CNN
+F 1 "GND" H 7155 5427 50  0000 C CNN
+F 2 "" H 7150 5600 50  0001 C CNN
+F 3 "" H 7150 5600 50  0001 C CNN
+	1    7150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EBAD9AB
+P 7150 5100
+F 0 "#PWR0104" H 7150 4850 50  0001 C CNN
+F 1 "GND" H 7155 4927 50  0000 C CNN
+F 2 "" H 7150 5100 50  0001 C CNN
+F 3 "" H 7150 5100 50  0001 C CNN
+	1    7150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4200 4950 4200
+Wire Wire Line
+	4950 4200 4950 3300
+Wire Wire Line
+	4950 3300 7950 3300
+Wire Wire Line
+	7950 3300 7950 2900
+Wire Wire Line
+	5150 4400 4900 4400
+Wire Wire Line
+	4900 4400 4900 3200
+Wire Wire Line
+	4900 3200 6750 3200
+Wire Wire Line
+	6750 3200 6750 2900
+Wire Wire Line
+	6350 5500 6550 5500
+Wire Wire Line
+	6550 5500 6550 6200
+Wire Wire Line
+	4750 2900 4600 2900
+Wire Wire Line
+	3400 2900 3400 6250
+Wire Wire Line
+	3400 6250 6600 6250
+Wire Wire Line
+	6600 6250 6600 5300
+Wire Wire Line
+	6600 5300 6350 5300
+Wire Wire Line
+	4750 2900 4750 3200
+Wire Wire Line
+	4750 3200 3450 3200
+Wire Wire Line
+	3450 3200 3450 6200
+Wire Wire Line
+	3450 6200 6550 6200
+NoConn ~ 5150 4000
+NoConn ~ 6350 4900
+NoConn ~ 6350 5000
+NoConn ~ 6350 4700
+Wire Wire Line
+	5350 3700 5750 3700
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5EEADC40
+P 3650 3650
+F 0 "J1" H 3568 3325 50  0000 C CNN
+F 1 "Conn_01x02" H 3568 3416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 3650 50  0001 C CNN
+F 3 "~" H 3650 3650 50  0001 C CNN
+	1    3650 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 3650 4050 3650
+Wire Wire Line
+	4050 3650 4050 3750
+Wire Wire Line
+	3850 3550 5350 3550
+Wire Wire Line
+	5350 3550 5350 3700
+$Comp
+L Display_Character:DA56-11GWA U1
+U 1 1 5EB5EB38
+P 4000 2500
+F 0 "U1" H 4000 3167 50  0000 C CNN
+F 1 "DA56-11GWA" H 4000 3076 50  0000 C CNN
+F 2 "Display_7Segment:DA56-11CGKWA" H 4020 1850 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/DA56-11GWA.pdf" H 3880 2600 50  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
