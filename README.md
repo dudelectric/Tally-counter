@@ -4,3 +4,7 @@
 
 ![alt text](https://github.com/dudelectric/Tally-counter/blob/master/sshot.png?raw=true)
 ![alt text](https://github.com/dudelectric/Tally-counter/blob/master/schematic.png?raw=true)
+![alt text](https://github.com/dudelectric/Tally-counter/blob/master/img1.jpg?raw=true)
+![alt text](https://github.com/dudelectric/Tally-counter/blob/master/img2.jpg?raw=true)
+![alt text](https://github.com/dudelectric/Tally-counter/blob/master/img3.jpg?raw=true)
+![alt text](https://github.com/dudelectric/Tally-counter/blob/master/img4.jpg?raw=true)
