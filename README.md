@@ -3,3 +3,4 @@
 
 
 ![alt text](https://github.com/dudelectric/Tally-counter/blob/master/sshot.png?raw=true)
+![alt text](https://github.com/dudelectric/Tally-counter/blob/master/schematic.png?raw=true)
